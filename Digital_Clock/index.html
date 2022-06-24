@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Digital Clock</title>
+</head>
+
+<body>
+    <div class="digi_clock">
+
+        <svg onclick="show_format()" id="ellipisis" width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
+
+        <div class="icon ">
+            <span id="format" val="12">12-hour format</span>
+            <div onclick="myfun()" class="switcher "></div>
+        </div>
+
+        <div class="clock">
+            <div id="time">
+                <h1 id="hour">00</h1>
+                <h1 class="dot">:</h1>
+                <h1 id="min">00</h1>
+            </div>
+
+            <div class="right_side">
+                <p id="pm">AM</p>
+                <p id="sec">00</p>
+            </div>
+
+        </div>
+        <div class="date">
+            <p id="month">Jan,</p>
+            <p id="day">Monday</p>
+            <p id="cur_date">1</p>
+            <p id="yr">1970</p>
+
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
+<script src="index.js"></script>

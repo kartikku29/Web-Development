@@ -1,0 +1,277 @@
+    * {
+        margin: 0%;
+        padding: 0%;
+        box-sizing: border-box;
+    }
+    
+    h1 {
+        color: #ffff;
+        font-weight: 600;
+        font-size: 10rem;
+        /* line-height: 20px; */
+    }
+    
+    p {
+        color: #ffff;
+        font-weight: 600;
+        font-size: 2rem;
+    }
+    
+    span {
+        color: white;
+        font-weight: 600;
+        font-size: 1.8rem;
+        background: -webkit-linear-gradient(90deg, #ef25b3, #dca9a9);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+    }
+    
+    body {
+        background-color: hsl(226, 43%, 10%);
+        ;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
+    }
+    
+    .digi_clock {
+        width: 35rem;
+        height: 20rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: hsl(226, 43%, 10%);
+        border-radius: 20px;
+        box-shadow: 0 5px 25px rgba(14, 21, 37, 0.8);
+        flex-direction: column;
+        position: relative;
+        /* overflow: ; */
+    }
+    
+    .digi_clock:before {
+        content: '';
+        position: absolute;
+        background: linear-gradient(45deg, #24ff6d, #2f93f1, #ff5e9a);
+        background-size: 200% 200%;
+        top: -5px;
+        left: -5px;
+        bottom: -5px;
+        right: -5px;
+        z-index: -1;
+        filter: blur(35px);
+    }
+    
+    #ellipisis {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        margin: 20px;
+        cursor: pointer;
+    }
+    
+    #input_check {
+        color: white;
+        width: 20px;
+        height: 20px;
+    }
+    
+    .clock {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    #time {
+        width: max-content;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+    }
+    
+    .right_side {
+        width: max-content;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-left: 2rem;
+    }
+    
+    #hour {
+        background: -webkit-linear-gradient(90deg, #634dff, #5fd4ff);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+    }
+    
+    #min {
+        background: -webkit-linear-gradient(90deg, #ff5e9a, #ffb968);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+    }
+    
+    .dot {
+        opacity: 0.5;
+        margin-bottom: 20px;
+    }
+    
+    #pm {
+        background: -webkit-linear-gradient(90deg, #bfea69, #cfd136);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        margin-bottom: 2rem;
+    }
+    
+    #sec {
+        background: -webkit-linear-gradient(90deg, #bfea69, #cfd136);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+    }
+    
+    .date {
+        background: -webkit-linear-gradient(90deg, #bfea69, #cfd136);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+    }
+    
+    .date {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #month {
+        margin-right: 0.6rem;
+    }
+    
+    #cur_date {
+        margin-left: 0.6rem;
+        margin-right: 0.6rem;
+    }
+    /* 12 hours format and 24 hours format*/
+    
+    .icon {
+        width: 60%;
+        height: 10%;
+        display: flex;
+        justify-content: center;
+        /* overflow: hidden; */
+        align-items: center;
+        transform: translateY(-100px);
+        transition: 0.3s linear;
+        transition-property: transform;
+        opacity: 0;
+        visibility: none;
+        margin: -20px;
+    }
+    
+    .icon.active_icon {
+        opacity: 1;
+        visibility: visible;
+        margin: 0px;
+        transition: 0.3s linear;
+        transition-property: transform;
+        transform: translateY(0px);
+    }
+    
+    .switcher {
+        margin-left: 20px;
+        background: hsl(226, 13%, 26%);
+        width: 65px;
+        height: 25px;
+        border-radius: 25px;
+        position: relative;
+        cursor: pointer;
+    }
+    
+    .switcher:before {
+        content: '';
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        width: 25px;
+        height: 24px;
+        border-radius: 25px;
+        background: #ffff;
+        transform: translateX(0px);
+        transition: 0.3s ease;
+        transition-property: transform;
+    }
+    
+    .switcher.active:before {
+        transform: translateX(40px);
+        background: #b5e0ee;
+    }
+    
+    @media( max-width: 720px) {
+        .digi_clock {
+            width: 25rem;
+            height: 15rem;
+        }
+        h1 {
+            font-size: 7rem;
+        }
+        p {
+            font-size: 1.5rem;
+        }
+        span {
+            font-size: 1rem;
+        }
+        .digi_clock:before {
+            filter: blur(30px);
+        }
+    }
+    
+    @media( max-width: 492px) {
+        .digi_clock {
+            width: 15rem;
+            height: 10rem;
+        }
+        h1 {
+            font-size: 4rem;
+        }
+        p {
+            font-size: 1rem;
+        }
+        span {
+            font-size: 0.6rem;
+        }
+        .digi_clock:before {
+            filter: blur(20px);
+        }
+        .right_side {
+            margin-left: 0.5rem;
+        }
+        #ellipisis {
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            margin: 10px;
+            cursor: pointer;
+        }
+        #pm {
+            margin-bottom: 1rem;
+        }
+        .icon {
+            width: 100%;
+            height: 10%;
+            margin: -10px;
+        }
+        .switcher {
+            margin-left: 10px;
+            width: 35px;
+            height: 15px;
+        }
+        .switcher:before {
+            width: 15px;
+            height: 14px;
+        }
+        .switcher.active:before {
+            transform: translateX(20px);
+        }
+        .dot {
+            margin-bottom: 5px;
+        }
+    }
