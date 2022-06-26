@@ -1,0 +1,172 @@
+* {
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+
+
+/* #body_notes {
+    background-image: url('design.png.png');
+    
+} */
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(59, 130, 246, 0.5);
+    ;
+}
+
+.left_navbar {
+    width: 50%;
+    margin-left: 2rem;
+}
+
+.left_navbar li {
+    list-style: none;
+    text-decoration: none;
+    display: inline-block;
+    margin: 1rem;
+    font-size: 1rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+}
+
+.right_navbar {
+    width: 50%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin: 1rem;
+    margin-right: 2rem;
+    font-size: 1rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+}
+
+#search_txt {
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 0 10px;
+    padding: 5px;
+}
+
+
+/* navbar end here */
+
+
+/* Section Start Here */
+
+.middle {
+    /* border: 2px solid red; */
+    max-width: fit-content;
+    margin: 50px auto;
+}
+
+.middle>p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+#notes {
+    border: 1px solid;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#notes>p {
+    margin: 10px;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.note_write {
+    width: 100vh;
+    height: 6rem;
+    margin: 10px;
+    resize: none;
+    /* margin: 10px; */
+    padding: 5px;
+}
+
+.title_note_write {
+    width: 200px;
+    height: 40px;
+    resize: none;
+    /* margin: 10px; */
+    padding: 5px;
+}
+
+#notes>button {
+    display: block;
+    margin: 10px;
+    font-size: 0.8rem;
+    padding: 8px;
+    background-color: rgb(172, 172, 245);
+    border: 1px solid rgb(172, 172, 245);
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+
+/* section end here */
+
+
+/* note store start here */
+
+.your_saved {
+    font-size: 2rem;
+    text-align: center;
+    margin: 50px;
+}
+
+.note_store {
+    border: 1px solid;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    display: flex;
+    flex-wrap: wrap;
+    width: 1000px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.inner_note_store {
+    max-width: 25%;
+    max-height: fit-content;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.inner_note_write {
+    resize: none;
+    height: 100px;
+    width: 200px;
+    padding: 5px;
+}
+
+.inner_note_store>p {
+    font-weight: bold;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.inner_note_store>p:nth-child(1) {
+    font-size: 1.5rem;
+    text-align: left;
+}
+
+.inner_note_store>button {
+    text-align: center;
+    margin: 10px;
+}
+
+
+/* note store end here */
