@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <title>Word Scrambled</title>
+</head>
+
+<body>
+    <header class="nav  ">
+        <h1>SCRAMBLE WORD GAME</h1>
+    </header>
+    <section class="sec  ">
+        <h1 class="animate__animated animate__rubberBand">SCRAMBLE</h1>
+        <div class="word">
+            <div class="letter animate__animated animate__heartBeat">W</div>
+            <div class="letter animate__animated animate__heartBeat">O</div>
+            <div class="letter animate__animated animate__heartBeat">R</div>
+            <div class="letter animate__animated animate__heartBeat">D</div>
+            <div class="letter animate__animated animate__heartBeat">S</div>
+        </div>
+
+        <input class="play_btn animate__animated animate__rubberBand animate_delay-5s" type="button" value="PLAY GAME">
+
+    </section>
+
+    <section class="choose hidden  ">
+        <h1>CHOOSE TOPIC</h1>
+        <div onclick="language()" class="topic">PROGRAMMING LANGUAGE</div>
+        <div onclick="places()" class="topic">PLACES</div>
+        <div onclick="animal()" class="topic">ANIMAL</div>
+        <div onclick="fruits()" class="topic">FRUITS</div>
+        <div onclick="vegetables()" class="topic">VEGETABLES</div>
+    </section>
+
+    <sec class="gameplay hidden">
+        <h1>Highest Score <span class="highscore"></span></h1>
+        <h1>Score <span class="score"></span></h1>
+
+        <div class="main_gameplay">
+            <h1 class="game_word"></h1>
+            <input class="input_btn" type="text" name="" id="">
+            <input class="submit_btn" type="button" value="GUESS">
+            <input class="play_again_btn" type="button" value="Play Again">
+        </div>
+    </sec>
+
+</body>
+
+</html>
+
+<script src="index.js"></script>
