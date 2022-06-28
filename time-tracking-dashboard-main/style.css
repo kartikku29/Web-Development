@@ -1,0 +1,182 @@
+* {
+    margin: 0%;
+    padding: 0%0;
+    box-sizing: border-box;
+}
+
+p {
+    font-size: 18px;
+    color: white;
+}
+
+h1 {
+    color: white;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: hsl(226, 43%, 10%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    background-color: hsl(226, 43%, 10%);
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 20px;
+    height: 600px;
+}
+
+.main_data {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+.main_data_upper {
+    margin: 10px;
+    height: 100%;
+    background-color: hsl(235, 45%, 61%);
+    border-radius: 20px;
+}
+
+.main_data_upper_1>img {
+    width: 100px;
+    margin: 30px;
+}
+
+.main_data_upper_1>p {
+    margin-left: 30px;
+    margin-bottom: 10px;
+    color: white;
+    /* font-weight: bold */
+}
+
+.main_data_upper_1>h1 {
+    margin-left: 30px;
+    margin-bottom: 15px;
+    font-size: 3.5rem;
+    color: white;
+    /* font-weight: bold; */
+}
+
+.main_data_upper_1 {
+    background-color: hsl(246, 80%, 60%);
+    border-radius: 20px;
+    height: 70%;
+}
+
+.main_data_lower {
+    /* background-color: hsl(246, 80%, 60%); */
+    height: 50%;
+    width: 100%;
+    margin: 10px;
+}
+
+.main_data_lower>ul>li {
+    list-style: none;
+    cursor: pointer;
+    text-decoration: none;
+    display: block;
+    margin: 1rem;
+    font-size: 1rem;
+    opacity: 0.8;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+}
+
+.main_data_lower>ul>li:hover {
+    font-weight: bold;
+    opacity: 1;
+}
+
+.column {
+    width: 282px;
+    height: 282px;
+    margin: 10px;
+    /* padding: 10px; */
+}
+
+.upper {
+    height: 100%;
+    background-color: hsl(15, 100%, 70%);
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    border-radius: 20px;
+}
+
+.data {
+    height: 80%;
+    width: 100%;
+    background-color: hsl(235, 45%, 61%);
+    display: flex;
+    flex-direction: row;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.work_upper {
+    background-color: hsl(15, 100%, 70%);
+    background-image: url(./images/icon-work.svg);
+    background-repeat: no-repeat;
+    background-position-x: right;
+}
+
+.data_left {
+    width: 80%;
+}
+
+.data_left>h1 {
+    margin-top: 30px;
+    font-size: 3.5rem;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+.data_right {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+}
+
+.play_upper {
+    background-color: hsl(195, 74%, 62%);
+    background-image: url(./images/icon-play.svg);
+    background-repeat: no-repeat;
+    background-position-x: right;
+}
+
+.excercise_upper {
+    background-color: hsl(145, 58%, 55%);
+    background-image: url(./images/icon-exercise.svg);
+    background-repeat: no-repeat;
+    background-position-x: right;
+}
+
+.social_upper {
+    background-color: hsl(264, 64%, 52%);
+    background-image: url(./images/icon-social.svg);
+    background-repeat: no-repeat;
+    background-position-x: right;
+}
+
+.study_upper {
+    background-color: hsl(348, 100%, 68%);
+    background-image: url(./images/icon-study.svg);
+    background-repeat: no-repeat;
+    background-position-x: right;
+}
+
+.self_upper {
+    background-color: hsl(43, 84%, 65%);
+    background-image: url(./images/icon-self-care.svg);
+    background-repeat: no-repeat;
+    background-position-x: right;
+}
