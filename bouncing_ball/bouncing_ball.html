@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bouncing Ball</title>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+        }
+        
+        .container {
+            width: 100%;
+            height: 100vh;
+            background-color: black;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .inner_container {
+            margin: 35px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .ball {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            animation-name: ball;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+        
+        @keyframes ball {
+            0% {
+                top: 50%;
+            }
+            50% {
+                top: 30%;
+            }
+            100% {
+                top: 50%;
+            }
+        }
+        
+        #ball1 {
+            position: absolute;
+            background-color: violet;
+            animation-delay: 0.2s;
+        }
+        
+        #ball2 {
+            position: absolute;
+            background-color: yellow;
+            animation-delay: 0.4s;
+        }
+        
+        #ball3 {
+            position: absolute;
+            background-color: blue;
+            animation-delay: 0.6s;
+        }
+        
+        #ball4 {
+            position: absolute;
+            background-color: white;
+            animation-delay: 0.8s;
+        }
+        
+        #ball5 {
+            position: absolute;
+            background-color: green;
+            animation-delay: 1s;
+        }
+        
+        .line {
+            position: absolute;
+            left: 50%;
+            top: 58%;
+            transform: translate(-50%, -58%);
+            background-color: white;
+            width: 400px;
+            height: 3px;
+        }
+        
+        @media (max-width:500px) {
+            .inner_container {
+                margin: 20px;
+            }
+            .ball {
+                width: 35px;
+                height: 35px;
+            }
+            .line {
+                position: absolute;
+                left: 58%;
+                top: 57%;
+                transform: translate(-58%, -57%);
+                width: 225px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="inner_container">
+            <div class="ball" id="ball1"></div>
+        </div>
+        <div class="inner_container">
+            <div class="ball" id="ball2"></div>
+        </div>
+        <div class="inner_container">
+            <div class="ball" id="ball3"></div>
+        </div>
+        <div class="inner_container">
+            <div class="ball" id="ball4"></div>
+        </div>
+        <div class="inner_container">
+            <div class="ball" id="ball5"></div>
+        </div>
+
+        <div class="line"></div>
+
+    </div>
+</body>
+
+</html>
