@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+
+<body>
+
+    <section class="calculator">
+        <div class="icon ">
+            <ion-icon name="grid-outline" class="btn_open" onclick="open_nav()"></ion-icon>
+            <div class="choice"></div>
+        </div>
+
+        <div class="navbar">
+            <ion-icon name="close-circle-outline" class="btn_close" onclick="open_nav()"></ion-icon>
+            <ul class="navlist" onclick="open_nav()">
+
+                <li onclick="standard()">Standard</li>
+                <li onclick="date_calculation()">Date Calculation</li>
+                <li onclick="scientific()">Scientific</li>
+                <li onclick="programmer()">Progammer</li>
+                <li onclick="currency()">Currency</li>
+                <li onclick="volume()">Volume</li>
+                <li onclick="length()">Length</li>
+                <li onclick="weight()">Weight and Mass</li>
+                <li onclick="temp()">Temperature</li>
+                <li onclick="energy()">Energy</li>
+                <li onclick="area()">Area</li>
+                <li onclick="speed()">Speed</li>
+                <li onclick="time()">Time</li>
+                <li onclick="power()">Power</li>
+                <li onclick="data()">Data</li>
+                <li onclick="pressure()">Pressure</li>
+
+            </ul>
+        </div>
+
+        <div class="screen">
+            <input id="screen_value" type="text">
+
+        </div>
+
+        <!-- ------------------------ Trigonomenty *--------------- -->
+
+        <div class="sci_trigo_content">
+            <span>Trigonometry</span>
+            <ion-icon name="chevron-down-outline" class="sci_btn_open" onclick="sci_btn_open()"></ion-icon>
+            <ion-icon name="chevron-up-outline" class="sci_btn_close" onclick="sci_btn_open()"></ion-icon>
+
+
+        </div>
+
+        <div class="key">
+
+            <input class="key_button" type="button" onclick="clearscreen()" value="C">
+            <input class="key_button" type="button" onclick="screen_val('(')" value="(">
+            <input class="key_button" type="button" onclick="screen_val(')')" value=")">
+            <input id="backSpace" class="key_button" type="button" onclick="backSpace()" value="BackSpace">
+        </div>
+        <div class="key">
+            <input class="key_button" type="button" onclick="screen_val('7')" value="7">
+            <input class="key_button" type="button" onclick="screen_val('8')" value="8">
+            <input class="key_button" type="button" onclick="screen_val('9')" value="9">
+            <input class="key_button" type="button" onclick="screen_val('-')" value="-">
+        </div>
+
+        <div class="key">
+            <input class="key_button" type="button" onclick="screen_val('4')" value="4">
+            <input class="key_button" type="button" onclick="screen_val('5')" value="5">
+            <input class="key_button" type="button" onclick="screen_val('6')" value="6">
+            <input class="key_button" type="button" onclick="screen_val('+')" value="+">
+
+        </div>
+        <div class="key">
+            <input class="key_button" type="button" onclick="screen_val('1')" value="1">
+            <input class="key_button" type="button" onclick="screen_val('2')" value="2">
+            <input class="key_button" type="button" onclick="screen_val('3')" value="3">
+            <input class="key_button" type="button" onclick="screen_val('*')" value="*">
+        </div>
+        <div class="key">
+            <input class="key_button" type="button" onclick="screen_val('0')" value="0">
+            <input class="key_button" type="button" onclick="screen_val('.')" value=".">
+            <input class="key_button" type="button" onclick="screen_val('7')" value="/">
+            <input class="key_button" type="button" onclick="answer()" value="=">
+        </div>
+
+
+        <!-- scientifc Calculator begin -->
+
+        <div class="sci_trigo">
+            <div class="scr_trigo_key_main ">
+                <div class="sci_trigo_key">
+                    <input class="sci_key_button" type="button" onclick="screen_val('sin')" value="sin">
+                    <input class="sci_key_button" type="button" onclick="screen_val('cos')" value="cos">
+                    <input class="sci_key_button" type="button" onclick="screen_val('tan')" value="tan">
+                    <input class="sci_key_button" type="button" onclick="screen_val('cosec')" value="cosec">
+                </div>
+                <div class="sci_trigo_key">
+                    <input class="sci_key_button" type="button" onclick="screen_val('sec')" value="sec">
+                    <input class="sci_key_button" type="button" onclick="screen_val('cot')" value="cot">
+                    <input class="sci_key_button" type="button" onclick="screen_val('3.14')" value="PI">
+                    <input class="sci_key_button" type="button" onclick="screen_val('3.14')" value="PI">
+                </div>
+            </div>
+
+            <div class="scientific_cal_main">
+                <div class="sci_key">
+
+                    <input class="sci_key_button" type="button" onclick="clearscreen()" value="C">
+                    <input class="sci_key_button" type="button" onclick="screen_val('3.14')" value="PI">
+                    <input class="sci_key_button" type="button" onclick="screen_val('2.14')" value="e">
+                    <input class="sci_key_button" type="button" onclick="screen_val('(')" value="(">
+
+                    <input id="backSpace" class="sci_key_button" type="button" onclick="backSpace()" value="BackSpace">
+                </div>
+                <div class="sci_key">
+                    <input class="sci_key_button" type="button" onclick="screen_val('x2')" value="x2">
+                    <input class="sci_key_button" type="button" onclick="screen_val('1/x')" value="1/x">
+                    <input class="sci_key_button" type="button" onclick="screen_val('|x|')" value="|x|">
+                    <input class="sci_key_button" type="button" onclick="screen_val('exp')" value="exp">
+                    <input class="sci_key_button" type="button" onclick="screen_val('mod')" value="mod">
+
+                </div>
+
+                <div class="sci_key">
+                    <input class="sci_key_button" type="button" onclick="screen_val('root')" value="Root">
+                    <input class="sci_key_button" type="button" onclick="screen_val('(')" value="(">
+                    <input class="sci_key_button" type="button" onclick="screen_val(')')" value=")">
+                    <input class="sci_key_button" type="button" onclick="screen_val('n!')" value="n!">
+                    <input class="sci_key_button" type="button" onclick="screen_val('/')" value="/">
+                </div>
+                <div class="sci_key">
+                    <input class="sci_key_button" type="button" onclick="screen_val('x^y')" value="x^y">
+                    <input class="sci_key_button" type="button" onclick="screen_val('7')" value="7">
+                    <input class="sci_key_button" type="button" onclick="screen_val('8')" value="8">
+                    <input class="sci_key_button" type="button" onclick="screen_val('9')" value="9">
+                    <input class="sci_key_button" type="button" onclick="screen_val('*')" value="*">
+
+                </div>
+                <div class="sci_key">
+                    <input class="sci_key_button" type="button" onclick="screen_val('10^x')" value="10^X">
+                    <input class="sci_key_button" type="button" onclick="screen_val('4')" value="4">
+                    <input class="sci_key_button" type="button" onclick="screen_val('5')" value="5">
+                    <input class="sci_key_button" type="button" onclick="screen_val('6')" value="6">
+                    <input class="sci_key_button" type="button" onclick="screen_val('-')" value="-">
+                </div>
+                <div class="sci_key">
+                    <input class="sci_key_button" type="button" onclick="screen_val('log')" value="log">
+                    <input class="sci_key_button" type="button" onclick="screen_val('1')" value="1">
+                    <input class="sci_key_button" type="button" onclick="screen_val('2')" value="2">
+                    <input class="sci_key_button" type="button" onclick="screen_val('3')" value="3">
+                    <input class="sci_key_button" type="button" onclick="screen_val('+')" value="+">
+                </div>
+                <div class="sci_key">
+                    <input class="sci_key_button" type="button" onclick="screen_val('ln')" value="ln">
+                    <input class="sci_key_button" type="button" onclick="screen_val('+/-')" value="+/-">
+                    <input class="sci_key_button" type="button" onclick="screen_val('0')" value="0">
+                    <input class="sci_key_button" type="button" onclick="screen_val('.')" value=".">
+                    <input class="sci_key_button" type="button" onclick="answer()" value="=">
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+</body>
+
+</html>
+
+<script src="index.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
