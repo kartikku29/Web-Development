@@ -244,12 +244,6 @@ body::before {
     cursor: pointer;
 }
 
-
-/* .check_active>p:hover {
-    color: hsl(236, 33%, 92%);
-    font-weight: bold;
-} */
-
 .clear_completed>p {
     font-size: 16px;
     font-family: 'Josefin Sans', sans-serif;
@@ -260,4 +254,88 @@ body::before {
 .clear_completed>p:hover {
     color: var(--font-color);
     font-weight: bold;
+}
+
+@media (max-width:650px) {
+    .mainbody {
+        width: 350px;
+        height: 300px;
+        padding-top: 5px;
+    }
+    .todo {
+        width: 350px;
+        margin-bottom: 30px;
+    }
+    .todo>h1 {
+        font-size: 2rem;
+        letter-spacing: 0.35rem;
+    }
+    .write_todo {
+        width: 350px;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-bottom: 20px;
+    }
+    .write_todo>input[type="text"] {
+        font-size: 1.2rem;
+    }
+    .last_row {
+        padding: 10px;
+        width: 350px;
+        height: 66px;
+        justify-content: space-evenly;
+    }
+    .itemleft {
+        font-size: 10px;
+    }
+    .check>p {
+        font-size: 15px;
+    }
+    .check_active {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .check_active>p {
+        font-size: 10px;
+    }
+    .clear_completed>p {
+        font-size: 10px;
+    }
+}
+
+@media (max-width:400px) {
+    .mainbody {
+        width: 250px;
+    }
+    .todo {
+        width: 250px;
+    }
+    .todo>h1 {
+        font-size: 2rem;
+        letter-spacing: 0.35rem;
+    }
+    .write_todo {
+        width: 250px;
+    }
+    .write_todo>input[type="text"] {
+        font-size: 1rem;
+    }
+    .last_row {
+        width: 250px;
+    }
+    .itemleft {
+        font-size: 10px;
+        text-align: center;
+    }
+    .check>p {
+        font-size: 12px;
+    }
+    .check_active>p {
+        font-size: 10px;
+    }
+    .clear_completed>p {
+        font-size: 10px;
+        text-align: center;
+    }
 }
