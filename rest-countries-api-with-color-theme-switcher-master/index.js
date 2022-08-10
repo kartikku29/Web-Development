@@ -163,4 +163,10 @@ function dark_mode() {
 function day_mode() {
     document.querySelector('.dark_mode').style.display = "none";
     document.querySelector('.day_mode').style.display = "block";
+    document.querySelector('.search_icon_dark').style.display = "none";
+    document.querySelector('.search_icon_day').style.display = "block";
+    document.querySelector(':root').style.setProperty("--bg-color", "hsl(207, 26%, 17%)");
+    document.querySelector(':root').style.setProperty("--nav-color", "hsl(209, 23%, 22%)");
+    document.querySelector(':root').style.setProperty("--font-color", "white");
+
 }
