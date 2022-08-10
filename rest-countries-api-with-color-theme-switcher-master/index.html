@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Rest Countries Api</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <p>Where in the world?</p>
+        <div class="mode">
+            <svg class="day_mode" onclick="dark_mode()" xmlns="http://www.w3.org/2000/svg" width="26" height="26"><path fill="#FFF" fill-rule="evenodd" d="M13 21a1 1 0 011 1v3a1 1 0 11-2 0v-3a1 1 0 011-1zm-5.657-2.343a1 1 0 010 1.414l-2.121 2.121a1 1 0 01-1.414-1.414l2.12-2.121a1 1 0 011.415 0zm12.728 0l2.121 2.121a1 1 0 01-1.414 1.414l-2.121-2.12a1 1 0 011.414-1.415zM13 8a5 5 0 110 10 5 5 0 010-10zm12 4a1 1 0 110 2h-3a1 1 0 110-2h3zM4 12a1 1 0 110 2H1a1 1 0 110-2h3zm18.192-8.192a1 1 0 010 1.414l-2.12 2.121a1 1 0 01-1.415-1.414l2.121-2.121a1 1 0 011.414 0zm-16.97 0l2.121 2.12A1 1 0 015.93 7.344L3.808 5.222a1 1 0 011.414-1.414zM13 0a1 1 0 011 1v3a1 1 0 11-2 0V1a1 1 0 011-1z"/></svg>
+            <img class="dark_mode" onclick="day_mode()" src="moon.png" alt="">
+        </div>
+    </div>
+    <section class="main">
+        <div class="search_select">
+            <div id="search">
+                <img class="search_icon_day" src="icons8-search-30.png" alt="">
+                <img class="search_icon_dark" src="search-dark.png" alt="">
+                <input type="text" name="" id="search_txt" placeholder="Search for a country...">
+            </div>
+            <div id="select">
+                <div class="fliter">
+                    <p>Filter by Region</p>
+                    <img id="drop_logo" src="drop_down.png" alt="">
+                </div>
+                <div class="drop_down_menu">
+                    <p onclick="allshow()">All</p>
+                    <p onclick="show(this.id)" id="africa">Africa</p>
+                    <p onclick="show(this.id)" id="america">America</p>
+                    <p onclick="show(this.id)" id="asia">Asia</p>
+                    <p onclick="show(this.id)" id="europe">Europe</p>
+                    <p onclick="show(this.id)" id="ocenia">Ocenia</p>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="countries">
+            <!-- <div id="" class="country">
+                <img id="flag" src="https://flagcdn.com/w320/gl.png" alt="">
+                <div class="about">
+                    <h1>Germany</h1>
+                    <p><span>Population</span> 8170000</p>
+                    <p><span>Region</span> Europe</p>
+                    <p><span>Captial</span> Berlin</p>
+                </div>
+            </div> -->
+        </div>
+    </section>
+    <section class="country_details">
+        <div class="back">
+            <div onclick="back()" class="back_button">
+                <!-- <img src="drop_down.png" alt=""> -->
+                <p>Back</p>
+            </div>
+        </div>
+        <div class="country_details_main">
+            <!-- <div class="country_flag">
+                <img src="https://flagcdn.com/w320/gl.png" alt="">
+            </div>
+            <div class="details">
+                <div class="details_heading">
+                    <h1>Belgium</h1>
+                </div>
+                <div class="detail_upper">
+                    <div class="deatils_name">
+                        <p><span>Native Name</span> 8170000</p>
+                        <p><span>Population</span> Europe</p>
+                        <p><span>Region</span> Berlin</p>
+                        <p><span>Sub Region</span> 8170000</p>
+                        <p><span>Captial</span> Europe</p>
+                    </div>
+                    <div class="deatils_currencies">
+                        <p><span>Top Level Currencies</span> Berlin</p>
+                        <p><span>Curriences</span> 8170000</p>
+                        <p><span>Language</span> Europe</p>
+                    </div>
+                </div>
+                <div class="detail_lower">
+                    <p>Border Countries </p>
+                    <p class="border_buttom">
+                        France
+                    </p>
+                    <p class="border_buttom">
+                        Germany
+                    </p>
+                    <p class="border_buttom">
+                        Netherland
+                    </p>
+                </div> -->
+            <!-- </div> -->
+        </div>
+    </section>
+</body>
+
+</html>
+<script src="index.js">
+</script>
